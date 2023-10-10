@@ -22,7 +22,7 @@ public class Circulo extends FiguraRegularCirculo implements IfiguraGeometriCirc
 
      //metodo Perimetro  = 2 * π * r
     @Override
-    public void cacularPerimetro() {
+    public void calcularPerimetro() {
         double perimetro = (2*(Math.PI*(this.getRadio()*this.getRadio())));
         JOptionPane.showMessageDialog(null, "El perimetro del circulo es :"+ perimetro);
     }
