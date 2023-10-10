@@ -12,7 +12,7 @@ public class Hexagono extends FiguraRegular implements IfigulaGeometricaR {
     }
 
     @Override
-    public void cacularPerimetro() {
+    public void calcularPerimetro() {
         
     }
 
@@ -27,7 +27,7 @@ public class Hexagono extends FiguraRegular implements IfigulaGeometricaR {
     }
 
     @Override
-    public void sumaAngulosInteriosres() {
+    public void sumaAngulosInteriores() {
         
     }
 

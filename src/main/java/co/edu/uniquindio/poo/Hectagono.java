@@ -14,7 +14,7 @@ public class Hectagono extends FiguraRegular implements IfigulaGeometricaR {
     }
 
     @Override
-    public void cacularPerimetro() {
+    public void calcularPerimetro() {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'cacularPerimetro'");
     }
@@ -33,9 +33,8 @@ public class Hectagono extends FiguraRegular implements IfigulaGeometricaR {
     }
 
     @Override
-    public void sumaAngulosInteriosres() {
-        // TODO Auto-generated method stub
-        IfigulaGeometricaR.super.sumaAngulosInteriosres();
+    public void sumaAngulosInteriores() {
+        
     }
 
     
