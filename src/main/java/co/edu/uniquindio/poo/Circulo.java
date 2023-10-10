@@ -1,8 +1,8 @@
 package co.edu.uniquindio.poo;
 
 import javax.swing.JOptionPane;
-/* clase triangulo que resive la herencia de (FiguraRegular) y implementa (IfigulaGeometrica)
- * @autor Samuel castaño, Salome Perez, 
+/* clase triangulo que resive la herencia de (FiguraRegular) y implementa (IfigulaGeometrica)(IfigurraGeometriCirculo)
+ * @autor Samuel castaño, Salome Perez, Daniel jurado
  *  10/10/2023
  *  licencia publica Nu 1.0
  */ 
@@ -20,13 +20,13 @@ public class Circulo extends FiguraRegularCirculo implements IfiguraGeometriCirc
         JOptionPane.showMessageDialog(null, "El area del circulo es:"+ area);
     }
 
-     //metodo Perimetro  = 2 * π * r
+     //metodo sobre escrito  Perimetro  = 2 * π * r
     @Override
     public void calcularPerimetro() {
         double perimetro = (2*(Math.PI*(this.getRadio()*this.getRadio())));
         JOptionPane.showMessageDialog(null, "El perimetro del circulo es :"+ perimetro);
     }
-     //Diámetro = 2 * Radio
+     //metodo sobre escrito Diámetro = 2 * Radio
     @Override
     public void calcularDiametroCirculo() {
      double diametro = 2*getRadio();
