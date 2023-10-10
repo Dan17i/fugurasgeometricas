@@ -2,25 +2,30 @@ package co.edu.uniquindio.poo;
 
 import javax.swing.JOptionPane;
 
+/* clase triangulo que resive la herencia de (FiguraRegular) y implementa (IfigulaGeometrica)
+ * @autor Samuel castaño, Salome Perez, 
+ *  10/10/2023
+ * 
+ */ 
 public class Triangulo extends FiguraRegular implements IfigulaGeometricaR{
 
+    //constructor de la herencia 
     public Triangulo(float medidaLados) {
         super(medidaLados);
-        //TODO Auto-generated constructor stub
     }
-    //base * altura / 2
+    // area=base * altura / 2
     @Override
     public void calcularArea() {
          float area = ((getMedidaLados()*getMedidaLados())*2);
          JOptionPane.showMessageDialog(null, "El area de este  triangulo es de :"+ area);
     }
-    //como se calcula el perimetro de un triangulo 
+    // perimetro= medidalaos sumada 3 veces 
     @Override
     public void cacularPerimetro() {
         float perimetro= getMedidaLados()+getMedidaLados()+getMedidaLados();
         JOptionPane.showMessageDialog(null, "El perimetro de el triangulo es :s"+perimetro);
     }
-    //h = (2A) / b
+    //altura  = (2A) / b
     @Override
     public void calcularAlturaTriangulo() {
 
@@ -28,23 +33,23 @@ public class Triangulo extends FiguraRegular implements IfigulaGeometricaR{
         float  triangulo  = (2*area)/getMedidaLados();
         JOptionPane.showMessageDialog(null,"La altura del triangulo es:" +triangulo );
     }
-
-    @Override
-    public void calcularDiagonalCuadrados() {
-        // TODO Auto-generated method stub
-        IfigulaGeometricaR.super.calcularDiagonalCuadrados();
-    }
-
+    //apotema = área / (perímetro / 2)
     @Override
     public void calcularLongitudApotemas() {
-        // TODO Auto-generated method stub
-        IfigulaGeometricaR.super.calcularLongitudApotemas();
+
+    float area = ((getMedidaLados()*getMedidaLados())*2);
+    float perimetro= getMedidaLados()+getMedidaLados()+getMedidaLados();
+    float longitudP=  area /(perimetro /2);
+    
+    JOptionPane.showMessageDialog(null, "la longitud del apotema de este triangulo es :"+longitudP);
     }
 
+    // los angulos de un tringulo son 180° independientemente de su clasificacion, en este caso equilatero
     @Override
     public void sumaAngulosInteriosres() {
-        // TODO Auto-generated method stub
-        IfigulaGeometricaR.super.sumaAngulosInteriosres();
+
+         JOptionPane.showMessageDialog(null,"la suma de angulos en este triangulo equilatero es de: 180° ");
+
     }
     
 }
