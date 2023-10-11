@@ -17,8 +17,4 @@ public interface IfigulaGeometricaR {
 
    default void calcularAlturaTriangulo(){
    }
-
-
-
-   
 }
