@@ -14,5 +14,5 @@ public class FiguraRegular {
 
     public void setMedidaLados(float medidaLados) {
         this.medidaLados = medidaLados;
-    }s  
+    }
 }
