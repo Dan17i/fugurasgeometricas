@@ -3,8 +3,8 @@ package co.edu.uniquindio.poo;
 public interface IfigulaGeometricaR {
 
 
-   void calcularArea(); 
-   void calcularPerimetro();
+   float calcularArea(); 
+   float calcularPerimetro();
 
    default void sumaAngulosInteriores(){
    }

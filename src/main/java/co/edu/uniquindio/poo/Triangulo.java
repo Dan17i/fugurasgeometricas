@@ -15,15 +15,17 @@ public class Triangulo extends FiguraRegular implements IfigulaGeometricaR{
     }
     // metodo sobre escrito area=base * altura / 2
     @Override
-    public void calcularArea() {
+    public float calcularArea() {
          float area = ((getMedidaLados()*getMedidaLados())*2);
-         JOptionPane.showMessageDialog(null, "El area de este  triangulo es de :"+ area);
+          JOptionPane.showMessageDialog(null, "El area de este  triangulo es de :"+ area);
+          return area ;
     }
     // metoso sobre escrito perimetro= medidalados sumado 3 veces 
     @Override
-    public void calcularPerimetro() {
+    public float calcularPerimetro() {
         float perimetro= getMedidaLados()+getMedidaLados()+getMedidaLados();
         JOptionPane.showMessageDialog(null, "El perimetro de el triangulo es :s"+perimetro);
+        return    perimetro;
     }
     //metodo sobre escrito altura = (2A) / b
     @Override
@@ -34,9 +36,9 @@ public class Triangulo extends FiguraRegular implements IfigulaGeometricaR{
     }
     // metodo sobre escrito apotema = área / (perímetro / 2)
     @Override
-    public void calcularLongitudApotemas() {
+    public void calcularLongitudApotemas( ) {
 
-    float area = ((getMedidaLados()*getMedidaLados())*2);
+    float area = calcularArea();
     float perimetro= getMedidaLados()+getMedidaLados()+getMedidaLados();
     float longitudP=  area /(perimetro /2);
     

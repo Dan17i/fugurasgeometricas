@@ -9,15 +9,17 @@ public class Cuadrado extends FiguraRegular implements IfigulaGeometricaR {
     }
 
     @Override
-    public void calcularArea() {
+    public float calcularArea() {
         float area= getMedidaLados()*getMedidaLados();
         JOptionPane.showMessageDialog(null, "El area de este cuadrado es :"+area);
+        return  area;
     }
 
     @Override
-    public void calcularPerimetro() {
+    public float calcularPerimetro() {
         float perimetro= getMedidaLados()+getMedidaLados()+getMedidaLados()+getMedidaLados();
         JOptionPane.showMessageDialog(null,"El perimetro de este cuadrado es :"+perimetro);
+        return   perimetro ;
     }
 
     @Override

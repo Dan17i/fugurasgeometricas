@@ -9,15 +9,17 @@ public class Hexagono extends FiguraRegular implements IfigulaGeometricaR {
     }
 
     @Override
-    public void calcularArea() {
+    public float calcularArea() {
         float area=(float)(3 * Math.sqrt(3)/ 2) * getMedidaLados() * getMedidaLados();
         JOptionPane.showMessageDialog(null, "El area del Hexagono es "+area);
+        return area;
     }
 
     @Override
-    public void calcularPerimetro() {
+    public float calcularPerimetro() {
         float perimentro= 6 * getMedidaLados();
         JOptionPane.showMessageDialog(null,"El perimetro de un hexagono es "+ perimentro); 
+        return perimentro ;
     }
 
 

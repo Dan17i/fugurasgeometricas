@@ -9,17 +9,17 @@ public class Pentagono extends FiguraRegular implements IfigulaGeometricaR {
     }
       //area = (5 * sideLength * sideLength) / (4 * Math.tan(Math.PI / 5));
     @Override
-    public void calcularArea() {
+    public float calcularArea() {
       float area = (float) ((5*getMedidaLados()*getMedidaLados())/(4*Math.tan(Math.PI / 5)));
-        JOptionPane.showMessageDialog(null,"el area de un pentagono es de "+area+ "cm^2");
-
+      JOptionPane.showMessageDialog(null,"el area de un pentagono es de "+area+ "cm^2");
+       return area;
     }
 
     @Override
-    public void calcularPerimetro() {
+    public float calcularPerimetro() {
         float perimentro= 5*getMedidaLados();
         JOptionPane.showMessageDialog(null,"El perimero de un pentagono es de "+ perimentro );
-
+        return perimentro;
     }
 
     @Override

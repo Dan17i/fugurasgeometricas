@@ -9,15 +9,17 @@ public class Octagono extends FiguraRegular implements IfigulaGeometricaR {
     }
 
     @Override
-    public void calcularArea() {
+    public float calcularArea() {
          float area = (float)(2 + Math.sqrt(2)) * getMedidaLados() * getMedidaLados();
             JOptionPane.showMessageDialog(null,"El area de un octagono es "+ area);
+           return area;
     }
 
     @Override
-    public void calcularPerimetro() {
+    public float calcularPerimetro() {
         float perimentro= 8*getMedidaLados();   
         JOptionPane.showMessageDialog(null,"El perimetro del octagono es :"+perimentro);
+        return perimentro;
     }
 
     // apothema = sideLength / (2 * Math.tan(Math.PI / 8));
