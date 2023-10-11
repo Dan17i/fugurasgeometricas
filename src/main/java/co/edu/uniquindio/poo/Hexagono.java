@@ -33,7 +33,5 @@ public class Hexagono extends FiguraRegular implements IfigulaGeometricaR {
         float  sumaAngulos = (6 - 2) * 180;
          JOptionPane.showMessageDialog(null,"la suma de los angulos de este exagono es :"+ sumaAngulos); 
     }
-
-
     
 }
