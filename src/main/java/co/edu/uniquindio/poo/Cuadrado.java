@@ -22,7 +22,6 @@ public class Cuadrado extends FiguraRegular implements IfigulaGeometricaR {
         return   perimetro ;
     }
 
-    @Override
     public void calcularDiagonalCuadrados() {
         double diagonalCuadrado= getMedidaLados()* Math.sqrt(2);
         JOptionPane.showMessageDialog(null," la diagonal del cuadrado es :"+diagonalCuadrado);

@@ -28,7 +28,6 @@ public class Triangulo extends FiguraRegular implements IfigulaGeometricaR{
         return    perimetro;
     }
     //metodo sobre escrito altura = (2A) / b
-    @Override
     public void calcularAlturaTriangulo() {
         int area=0;
         float  triangulo  = (2*area)/getMedidaLados();
