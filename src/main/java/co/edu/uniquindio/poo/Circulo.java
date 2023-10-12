@@ -15,16 +15,18 @@ public class Circulo extends FiguraRegularCirculo implements IfiguraGeometriCirc
      
     // metodo para calcular el area del circulo
     @Override
-    public void calcularArea() {
+    public float calcularArea() {
         double area = Math.PI * (this.getRadio()* this.getRadio());
         JOptionPane.showMessageDialog(null, "El area del circulo es:"+ area);
+        return (float)area;
     }
 
      //metodo sobre escrito  Perimetro  = 2 * π * r
     @Override
-    public void calcularPerimetro() {
+    public float calcularPerimetro() {
         double perimetro = (2*(Math.PI*(this.getRadio()*this.getRadio())));
         JOptionPane.showMessageDialog(null, "El perimetro del circulo es :"+ perimetro);
+        return (float) perimetro;
     }
      //metodo sobre escrito Diámetro = 2 * Radio
     @Override
