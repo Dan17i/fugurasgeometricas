@@ -24,7 +24,7 @@ public class Triangulo extends FiguraRegular implements IfigulaGeometricaR{
     @Override
     public float calcularPerimetro() {
         float perimetro= getMedidaLados()+getMedidaLados()+getMedidaLados();
-        JOptionPane.showMessageDialog(null, "El perimetro de el triangulo es :s"+perimetro);
+        JOptionPane.showMessageDialog(null, "El perimetro de el triangulo es :"+perimetro);
         return    perimetro;
     }
     //metodo sobre escrito altura = (2A) / b
