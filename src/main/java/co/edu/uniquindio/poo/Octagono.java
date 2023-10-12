@@ -3,18 +3,18 @@ package co.edu.uniquindio.poo;
 import javax.swing.JOptionPane;
 
 public class Octagono extends FiguraRegular implements IfigulaGeometricaR {
-
+    //metodo constructor con herencia
     public Octagono(float medidaLados) {
         super(medidaLados);
     }
-
+    //metodo sobreescrito, calcula el area del octagono
     @Override
     public float calcularArea() {
          float area = (float)(2 + Math.sqrt(2)) * getMedidaLados() * getMedidaLados();
             JOptionPane.showMessageDialog(null,"El area de un octagono es "+ area);
            return area;
     }
-
+    //metodo sobreescrito calcula el perimetro del octagono 8*medidaLados
     @Override
     public float calcularPerimetro() {
         float perimentro= 8*getMedidaLados();   

@@ -6,14 +6,14 @@ import javax.swing.JOptionPane;
  *  10/10/2023
  *  licencia publica Nu 1.0
  */ 
-public class Circulo extends FiguraRegularCirculo implements IfiguraGeometriCirculo, IfigulaGeometricaR{
+public class Circulo extends FiguraRegularCirculo implements IfigulaGeometricaR{
 
     // constructor con herencia 
     public Circulo(float radio) {
         super(radio);
     }
      
-    // metodo para calcular el area del circulo
+    // metodo sobreescrito, para calcular el area del circulo
     @Override
     public float calcularArea() {
         double area = Math.PI * (this.getRadio()* this.getRadio());
@@ -28,8 +28,7 @@ public class Circulo extends FiguraRegularCirculo implements IfiguraGeometriCirc
         JOptionPane.showMessageDialog(null, "El perimetro del circulo es :"+ perimetro);
         return (float) perimetro;
     }
-     //metodo sobre escrito Diámetro = 2 * Radio
-    @Override
+     //metodo propio, calcula Diámetro = 2 * Radio
     public void calcularDiametroCirculo() {
      double diametro = 2*getRadio();
          JOptionPane.showMessageDialog(null, "El diametro del circulo es :"+ diametro);        

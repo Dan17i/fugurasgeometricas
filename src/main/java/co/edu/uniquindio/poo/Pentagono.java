@@ -14,14 +14,14 @@ public class Pentagono extends FiguraRegular implements IfigulaGeometricaR {
       JOptionPane.showMessageDialog(null,"el area de un pentagono es de "+area+ "cm^2");
        return area;
     }
-
+    //calcula el perimetro de pentagono
     @Override
     public float calcularPerimetro() {
         float perimentro= 5*getMedidaLados();
         JOptionPane.showMessageDialog(null,"El perimero de un pentagono es de "+ perimentro );
         return perimentro;
     }
-
+    //calcula la longitud de los apotemas
     @Override
     public void calcularLongitudApotemas() {
         float pi= (float) Math.PI;
@@ -29,7 +29,7 @@ public class Pentagono extends FiguraRegular implements IfigulaGeometricaR {
         JOptionPane.showMessageDialog(null, "La logitud de los apotemas es "+longitudApotemas);
 
     }
-
+    //suma los angulos interiores del pentagono
     @Override
     public void sumaAngulosInteriores() {
         float sumaAngulo=(5-2)*180;

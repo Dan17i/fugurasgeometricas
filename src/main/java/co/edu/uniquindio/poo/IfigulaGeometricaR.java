@@ -5,16 +5,10 @@ public interface IfigulaGeometricaR {
 
    float calcularArea(); 
    float calcularPerimetro();
-
+   //son metodos por default, son de obligatoria implementacion
    default void sumaAngulosInteriores(){
    }
-
+   //metodo por default de obligatoria implementacion
    default void calcularLongitudApotemas(){
-   }
-
-   default void calcularDiagonalCuadrados(){
-   }
-
-   default void calcularAlturaTriangulo(){
    }
 }
